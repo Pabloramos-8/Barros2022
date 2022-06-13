@@ -23,6 +23,7 @@ import java.util.function.Function;
 @Service
 public class EventoService extends BaseService<Evento, Long, EventoRepository> {
 
+   @Autowired
    private EventoRepository eventoRepository;
 
    public Evento addEvento(Evento evento) {
