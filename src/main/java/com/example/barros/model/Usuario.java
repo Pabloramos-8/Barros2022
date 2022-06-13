@@ -1,5 +1,7 @@
 package com.example.barros.model;
 
+import org.jetbrains.annotations.Nullable;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,6 +13,20 @@ public class Usuario {
     private Long idUsuario;
     private String username;
     private String password;
+
+    @Nullable
+    private String photo;
+
+    @Nullable
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(@Nullable String photo) {
+        this.photo = photo;
+    }
+
+
 
     public Usuario() {
     }
